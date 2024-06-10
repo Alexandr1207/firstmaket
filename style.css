@@ -1,0 +1,286 @@
+/* Reset and base styles  */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+/*****************************************/
+
+header{
+    padding: 56px 134px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2B4949;
+    align-items: center;
+    border-bottom: 3px solid #EFE5D3;
+}
+
+.nav{
+    display: flex;
+    gap: 62px;
+    font-size: 20px;
+    font-weight: 800;
+    color: #fff;
+    align-items: center;
+}
+
+.nav p{
+    border-bottom: 1px solid #fff;
+    margin: 0;
+    display: inline-block;
+    height: 25px;
+    text-align: center;
+}
+
+.sign{
+    width: 85px;
+    height: 47px;
+    background-color: yellow;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.log{
+    width: 85px;
+    height: 47px;
+    background-color: #fff;
+    margin: -4px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.log:hover~.sign{
+    background-color: #fff;
+}
+
+.log:hover{
+    background-color: yellow;
+}
+
+.buttons{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.brone{
+    background-image: url(img/Rectangle\ 4.svg);
+    background-repeat: no-repeat;
+    padding: 212px 134px;
+    background-size: cover;
+}
+
+.brone-but{
+    display: flex;
+    justify-content: space-between;
+}
+
+.brone-but button:first-child{
+    background-color: rgba(61, 58, 58, 0.8);
+    text-align: center;
+    width: 471px;
+    height: 241px;
+    border-radius: 50px;
+    border: 1px solid #DFCBA7;
+    color: #DFCBA7;
+    font-weight: 700;
+    font-size: 48px;
+    padding: 6px;
+}
+
+.brone-but button:last-child{
+    background-color: rgba(39, 86, 87, 0.8);
+    text-align: center;
+    width: 471px;
+    height: 241px;
+    border-radius: 50px;
+    border: 1px solid #DFCBA7;
+    color: #DFCBA7;
+    font-weight: 700;
+    font-size: 48px;
+    padding: 6px;
+}
+
+.tours{
+    background-color: #275657;
+    color: #DFCBA7;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    padding: 53px 135px;
+    border-bottom: 3px solid #EFE5D3;
+}
+
+.tours p{
+    margin-bottom: 9px;
+}
+
+.tour-pics{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 59px;
+}
+
+.contacts{
+    background-color: #275657;
+    padding: 32px 115px;
+    border-bottom: 3px solid #DFCBA7;
+}
+
+.fp{
+    color: #DFCBA7;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.con-pics{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.mobile{
+    display: flex;
+    padding: 31px 49px;
+    background-color: #C5BDBD61;
+    justify-content: space-between;
+    gap: 96px;
+    color: #fff;
+    font-size: 32px;
+    box-shadow: 15px 15px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.signs p{
+    margin-bottom: 12px;
+}
+
+.nums p{
+    margin-bottom: 12px;
+}
+
+.galery{
+    padding-top: 32px;
+    background-color: #275657;
+    color: #DFCBA7;
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+    padding-bottom: 141px;;
+}
+
+.galery p{
+    margin-bottom: 44px;
+}
+
+.gal-pics{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer{
+    background-color: #2B4949;
+    display: flex;
+    padding: 20px 135px;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-size: 16px;
+}
+
+.texts{
+    display: flex;
+    gap: 122px;
+}
+
+.texts p{
+    margin-bottom: 5px;
+}
